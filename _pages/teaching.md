@@ -1,12 +1,20 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+title: Teaching
+description: A list of courses I am TAing or have TAed.
 nav: true
-nav_order: 5
+nav_order: 2
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+#### **Machine Learning (CMPSC 165B)**<br>
+University of California, Santa Barbara, Fall 2022
 
-Organize your courses by years, topics, or universities, however you like!
+#### **Introduction to Natural Language Processing (EECS 487)**<br>
+University of Michigan, Winter 2022
+
+#### **Applied Machine Learning for Affective Computing (EECS 498)**<br>
+University of Michigan, Winter 2021
+
+#### **Chemistry Laboratory (VC 211)**<br>
+Shanghai Jiao Tong University, Winter 2018
