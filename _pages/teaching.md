@@ -7,6 +7,9 @@ nav: true
 nav_order: 2
 ---
 
+#### **Introduction to Deep Learning (CMPSC 190I)**<br>
+University of California, Santa Barbara, Fall 2023
+
 #### **Machine Learning (CMPSC 165B)**<br>
 University of California, Santa Barbara, Fall 2022
 

@@ -4,4 +4,4 @@ date: 2023-04-13
 inline: true
 ---
 
-I will join Adobe as a research intern this summer! I will work on generative models in vision domain.
+I will join Adobe as a research intern this summer! I will work on question answering with LLMs.
