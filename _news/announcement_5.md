@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2023-04-13
+date: 2024-03-01
 inline: true
 ---
 
-I will join Adobe as a research intern this summer! I will work on question answering with LLMs.
+Our paper on [improving diffusion generation](https://arxiv.org/abs/2312.06038) is accepted at CVPR 2024 as a **highlight** paper!
