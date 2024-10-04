@@ -123,6 +123,13 @@
           <div class="periodical">
             {{ periodical | strip }}
           </div>
+          {%- if entry.award -%}
+            {%- assign first_word = entry.award | split: ' ' | first -%}
+            {%- assign remaining_text = entry.award | remove_first: first_word | strip -%}
+            <strong>{{ first_word }}</strong> {{ remaining_text }}
+          {%- endif -%}
+
+
         {%- endif %}
         
           <!-- Links/Buttons -->
