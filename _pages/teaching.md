@@ -7,6 +7,9 @@ nav: true
 nav_order: 2
 ---
 
+#### **Introduction to Optimization (CMPSC 190A)**<br>
+University of California, Santa Barbara, Fall 2025
+
 #### **Introduction to Deep Learning (CMPSC 190I)**<br>
 University of California, Santa Barbara, Fall 2024, 2023
 
