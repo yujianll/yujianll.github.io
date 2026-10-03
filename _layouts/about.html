@@ -40,6 +40,20 @@ layout: default
             {{ content }}
           </div>
 
+          {% if page.job_market -%}
+          <!-- Job market -->
+          <div class="job-market">
+            <div class="job-market-text">
+              <span class="job-market-badge"><span class="job-market-dot"></span>On the job market</span>
+              <p>{{ page.job_market }}</p>
+            </div>
+            <div class="job-market-actions">
+              <a class="link-btn" href="mailto:{{ site.email | encode_email }}"><i class="fas fa-envelope"></i> Contact me</a>
+              <a class="link-btn" href="{{ '/assets/pdf/Yujian_CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> CV</a>
+            </div>
+          </div>
+          {%- endif %}
+
           {% if page.news -%}
           <!-- News -->
           {%- include news.html %}

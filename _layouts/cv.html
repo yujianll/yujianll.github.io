@@ -5,11 +5,25 @@ layout: default
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">{{ page.title }} {% if page.cv_pdf %}<a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>{% endif %}</h1>
+            <h1 class="post-title">{{ page.title }}</h1>
             <p class="post-description">{{ page.description }}</p>
           </header>
 
           <article>
+            {% if page.cv_pdf -%}
+            {%- assign cv_pdf_url = page.cv_pdf | prepend: 'assets/pdf/' | relative_url -%}
+            <div class="cv-pdf">
+              <div class="cv-pdf-actions">
+                <a class="link-btn" href="{{ cv_pdf_url }}" download><i class="fas fa-download"></i> Download PDF</a>
+                <a class="link-btn" href="{{ cv_pdf_url }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Open in new tab</a>
+              </div>
+              <object class="cv-pdf-frame" data="{{ cv_pdf_url }}#toolbar=0&navpanes=0&view=FitH" type="application/pdf">
+                <div class="cv-pdf-fallback">
+                  Your browser can't display the PDF here. <a href="{{ cv_pdf_url }}" target="_blank" rel="noopener noreferrer">Open the CV</a> instead.
+                </div>
+              </object>
+            </div>
+            {%- endif %}
             <div class="cv">
               {% for entry in site.data.cv %}
                 <div class="card mt-3 p-3">
